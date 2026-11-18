@@ -1,0 +1,24 @@
+Data, traces and documentation license
+
+Copyright 2026 Continual Awareness
+
+The following parts of this repository are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0):
+
+  - results/        (summary, per-match tables and ratings of the v1 run)
+  - traces/         (the match trace files, including the release attachment
+                     urn-exchange-v1-traces.jsonl.gz)
+  - docs/           (rules, harness description and findings)
+  - README.md       (text and tables)
+
+You are free to share and adapt this material for any purpose, including commercially, as long as you
+give appropriate credit (for example "Urn Exchange v1, Continual Awareness, 2026"), provide a link to the
+license, and indicate if changes were made.
+
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary:         https://creativecommons.org/licenses/by/4.0/
+
+The model outputs in the traces (replies, notes, readable reasoning text) were produced by third-party
+models; their providers' terms may also apply to how you use them.
+
+All source code (src/, tests/, scripts/, configs/) is licensed under the Apache License 2.0; see LICENSE.

@@ -1,0 +1,93 @@
+# Urn Exchange v1 side run: GPT-6.2 and Claude at reasoning effort "xhigh" instead of "high".
+#
+# One deal (full-01 seed 0, also played by the main run at "high") in all 6 seat rotations: 6 matches. The
+# Gemini models are unchanged (thinking capped at 8,000 tokens; the cap replaces the effort). Reply limit
+# 16,000 as in the main run. In v1 this did not change the order; Claude thought 3-5x more, GPT about 2x.
+#
+#   urn-exchange run --config configs/v1_xhigh.yaml   PAID: about USD 45-60 (v1: USD 45.82)
+name: urn-exchange-v1-xhigh
+
+budget_usd: 0     # set before running (hard ceiling for this run id)
+
+concurrency: 6    # the deal's six seat rotations at once
+circuit_breaker: 3     # a model with 3 errored matches in a row is skipped for the rest of the run
+params:                # applied to every model after its own params
+  max_tokens: 16000
+  reasoning_effort: xhigh
+estimate_output_tokens: 3000
+ledger: results/spend.sqlite
+results_dir: results/runs
+cache_dir: results/cache
+cache_read: true
+
+models:
+- key: gpt-6.2-astra
+  provider: openai_compatible
+  model: openai/gpt-6.2-astra
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [openai], allow_fallbacks: false}
+  rpm: 18
+  estimate: {input_tokens_per_call: 4679, cached_fraction: 0.803, output_tokens_per_call: 152}   # measured in v1
+- key: gpt-6.2-sol
+  provider: openai_compatible
+  model: openai/gpt-6.2-sol
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [openai], allow_fallbacks: false}
+  rpm: 18
+  estimate: {input_tokens_per_call: 6558, cached_fraction: 0.793, output_tokens_per_call: 390}
+- key: gemini-4-argon
+  provider: openai_compatible
+  model: google/gemini-4-argon
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [google-ai-studio], allow_fallbacks: false}   # standard tier
+  rpm: 18
+  params:
+    reasoning: {max_tokens: 8000}   # thinking cap; replaces reasoning_effort for this model
+  estimate: {input_tokens_per_call: 14374, cached_fraction: 0.634, output_tokens_per_call: 951}
+- key: gemini-4-carbon
+  provider: openai_compatible
+  model: google/gemini-4-carbon
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [google-ai-studio], allow_fallbacks: false}
+  rpm: 18
+  params:
+    reasoning: {max_tokens: 8000}
+  estimate: {input_tokens_per_call: 69277, cached_fraction: 0.632, output_tokens_per_call: 5279}
+- key: claude-fable-5.2
+  provider: openai_compatible
+  model: anthropic/claude-fable-5.2
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [anthropic], allow_fallbacks: false}
+  rpm: 18
+  params:
+    cache_control: {type: ephemeral}   # Anthropic caches only on request
+  estimate: {input_tokens_per_call: 9604, cached_fraction: 0.765, output_tokens_per_call: 445}
+- key: claude-sonnet-5.5
+  provider: openai_compatible
+  model: anthropic/claude-sonnet-5.5
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [anthropic], allow_fallbacks: false}
+  rpm: 18
+  params:
+    cache_control: {type: ephemeral}
+  estimate: {input_tokens_per_call: 7278, cached_fraction: 0.744, output_tokens_per_call: 228}
+
+# Optional direct-Gemini route (GEMINI_API_KEY, `pip install -e ".[gemini]"`): replace a Gemini entry above
+# with the block below. Same model, same 8k thinking cap (sent as thinking_budget). Lower Google AI Studio
+# tiers have a spend-based rate limit per rolling 10 minutes; the runner waits it out (long backoff). Watch
+# your monthly spend cap in Google AI Studio: when it is reached, calls fail until it is raised.
+#
+# - key: gemini-4-argon
+#   provider: gemini_api
+#   model: gemini-4-argon
+#   api_key_env: GEMINI_API_KEY
+#   rpm: 18
+#   params:
+#     reasoning: {max_tokens: 8000}
+#   estimate: {input_tokens_per_call: 14374, cached_fraction: 0.634, output_tokens_per_call: 951}
+
+games:
+- game: exchange
+  deals: [full-01]
+  seeds: [0]
+  n_players: 6

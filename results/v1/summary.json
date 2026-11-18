@@ -1,0 +1,647 @@
+{
+ "title": "Urn Exchange v1",
+ "date": "2026-11-18",
+ "setup": {
+  "models": 6,
+  "seats": 6,
+  "deals": 12,
+  "rotations_per_deal": 6,
+  "matches": 72,
+  "hands_per_match": 10,
+  "start_chips": 1000,
+  "families": [
+   "clean",
+   "research",
+   "insider",
+   "noisy",
+   "insider_research",
+   "noisy_research"
+  ],
+  "reply_limit_tokens": 16000,
+  "errors": 0
+ },
+ "deals": [
+  {
+   "unit": "exchange/full-01/s0/g0",
+   "deal": "full-01",
+   "seed": 0,
+   "family": "clean"
+  },
+  {
+   "unit": "exchange/full-01/s1/g0",
+   "deal": "full-01",
+   "seed": 1,
+   "family": "clean"
+  },
+  {
+   "unit": "exchange/full-02/s0/g0",
+   "deal": "full-02",
+   "seed": 0,
+   "family": "research"
+  },
+  {
+   "unit": "exchange/full-02/s1/g0",
+   "deal": "full-02",
+   "seed": 1,
+   "family": "research"
+  },
+  {
+   "unit": "exchange/full-03/s0/g0",
+   "deal": "full-03",
+   "seed": 0,
+   "family": "insider"
+  },
+  {
+   "unit": "exchange/full-03/s1/g0",
+   "deal": "full-03",
+   "seed": 1,
+   "family": "insider"
+  },
+  {
+   "unit": "exchange/full-04/s0/g0",
+   "deal": "full-04",
+   "seed": 0,
+   "family": "noisy"
+  },
+  {
+   "unit": "exchange/full-04/s1/g0",
+   "deal": "full-04",
+   "seed": 1,
+   "family": "noisy"
+  },
+  {
+   "unit": "exchange/full-05/s0/g0",
+   "deal": "full-05",
+   "seed": 0,
+   "family": "insider_research"
+  },
+  {
+   "unit": "exchange/full-05/s1/g0",
+   "deal": "full-05",
+   "seed": 1,
+   "family": "insider_research"
+  },
+  {
+   "unit": "exchange/full-06/s0/g0",
+   "deal": "full-06",
+   "seed": 0,
+   "family": "noisy_research"
+  },
+  {
+   "unit": "exchange/full-06/s1/g0",
+   "deal": "full-06",
+   "seed": 1,
+   "family": "noisy_research"
+  }
+ ],
+ "models": [
+  {
+   "key": "gemini-4-carbon",
+   "name": "Gemini 4 Carbon",
+   "lab": "Google",
+   "setting": "thinking budget 8k",
+   "chips": 4612,
+   "chips_ci95": [
+    548,
+    8839
+   ],
+   "ev_chips_per_match": 111.8,
+   "deals_won": 3,
+   "deals_positive": 10,
+   "forced_passes": 0,
+   "per_deal": [
+    833,
+    -47,
+    335,
+    477,
+    62,
+    82,
+    267,
+    1097,
+    1628,
+    159,
+    602,
+    -883
+   ],
+   "by_family": {
+    "clean": 786,
+    "research": 812,
+    "insider": 144,
+    "noisy": 1364,
+    "insider_research": 1787,
+    "noisy_research": -281
+   },
+   "ev_by_family": {
+    "clean": 894,
+    "research": 1485,
+    "insider": 1427,
+    "noisy": 1537,
+    "insider_research": 1762,
+    "noisy_research": 947
+   },
+   "behaviour": {
+    "r1_pass_rate": 0.287,
+    "r2_pass_rate": 0.124,
+    "r1_avg_size": 4.3,
+    "r1_max_size_rate": 0.016,
+    "research_rate": 0.367,
+    "fees_paid_per_match": 10.4028,
+    "fees_received_per_match": 10.875,
+    "trades_per_match": 4.75,
+    "volume_per_match": 16.0,
+    "wrong_direction_per_match": 0.4583,
+    "pass_when_should_trade_per_match": 4.3056,
+    "trade_when_should_pass_per_match": 0.5278,
+    "market_read": 0.0326,
+    "belief_logloss": 0.0,
+    "notes_written": 1710
+   },
+   "calls": 1848,
+   "tokens_per_move_median": 4802,
+   "tokens_per_move_mean": 5279,
+   "latency_s_median": 73.6,
+   "latency_s_p90": 148.9,
+   "cost_usd": 199.84,
+   "cost_usd_per_match": 2.776,
+   "elo": 1605,
+   "elo_ci95": [
+    1490,
+    1746
+   ]
+  },
+  {
+   "key": "gemini-4-argon",
+   "name": "Gemini 4 Argon",
+   "lab": "Google",
+   "setting": "thinking budget 8k",
+   "chips": 3619,
+   "chips_ci95": [
+    788,
+    6528
+   ],
+   "ev_chips_per_match": 11.6,
+   "deals_won": 3,
+   "deals_positive": 9,
+   "forced_passes": 0,
+   "per_deal": [
+    664,
+    486,
+    195,
+    484,
+    -162,
+    269,
+    923,
+    -556,
+    967,
+    -70,
+    166,
+    253
+   ],
+   "by_family": {
+    "clean": 1150,
+    "research": 679,
+    "insider": 107,
+    "noisy": 367,
+    "insider_research": 897,
+    "noisy_research": 419
+   },
+   "ev_by_family": {
+    "clean": 650,
+    "research": -261,
+    "insider": -92,
+    "noisy": -368,
+    "insider_research": 702,
+    "noisy_research": 206
+   },
+   "behaviour": {
+    "r1_pass_rate": 0.103,
+    "r2_pass_rate": 0.076,
+    "r1_avg_size": 4.42,
+    "r1_max_size_rate": 0.062,
+    "research_rate": 0.258,
+    "fees_paid_per_match": 5.4722,
+    "fees_received_per_match": 12.0139,
+    "trades_per_match": 5.5694,
+    "volume_per_match": 18.4444,
+    "wrong_direction_per_match": 0.5139,
+    "pass_when_should_trade_per_match": 3.6111,
+    "trade_when_should_pass_per_match": 0.75,
+    "market_read": 0.0501,
+    "belief_logloss": 0.0001,
+    "notes_written": 750
+   },
+   "calls": 1811,
+   "tokens_per_move_median": 753,
+   "tokens_per_move_mean": 951,
+   "latency_s_median": 22.6,
+   "latency_s_p90": 55.6,
+   "cost_usd": 37.91,
+   "cost_usd_per_match": 0.526,
+   "elo": 1616,
+   "elo_ci95": [
+    1519,
+    1769
+   ]
+  },
+  {
+   "key": "claude-sonnet-5.5",
+   "name": "Claude Sonnet 5.5",
+   "lab": "Anthropic",
+   "setting": "effort high",
+   "chips": -315,
+   "chips_ci95": [
+    -3806,
+    3270
+   ],
+   "ev_chips_per_match": -8.3,
+   "deals_won": 3,
+   "deals_positive": 5,
+   "forced_passes": 0,
+   "per_deal": [
+    -81,
+    -19,
+    -463,
+    240,
+    756,
+    770,
+    -843,
+    -852,
+    -385,
+    453,
+    -101,
+    210
+   ],
+   "by_family": {
+    "clean": -100,
+    "research": -223,
+    "insider": 1526,
+    "noisy": -1695,
+    "insider_research": 68,
+    "noisy_research": 109
+   },
+   "ev_by_family": {
+    "clean": -6,
+    "research": -194,
+    "insider": 190,
+    "noisy": -764,
+    "insider_research": 24,
+    "noisy_research": 154
+   },
+   "behaviour": {
+    "r1_pass_rate": 0.181,
+    "r2_pass_rate": 0.679,
+    "r1_avg_size": 3.93,
+    "r1_max_size_rate": 0.041,
+    "research_rate": 0.242,
+    "fees_paid_per_match": 5.2222,
+    "fees_received_per_match": 11.9861,
+    "trades_per_match": 3.0833,
+    "volume_per_match": 9.7639,
+    "wrong_direction_per_match": 0.375,
+    "pass_when_should_trade_per_match": 5.8056,
+    "trade_when_should_pass_per_match": 0.375,
+    "market_read": 0.1286,
+    "belief_logloss": 0.0003,
+    "notes_written": 41
+   },
+   "calls": 1801,
+   "tokens_per_move_median": 201,
+   "tokens_per_move_mean": 228,
+   "latency_s_median": 3.1,
+   "latency_s_p90": 4.7,
+   "cost_usd": 13.48,
+   "cost_usd_per_match": 0.187,
+   "elo": 1520,
+   "elo_ci95": [
+    1413,
+    1643
+   ]
+  },
+  {
+   "key": "claude-fable-5.2",
+   "name": "Claude Fable 5.2",
+   "lab": "Anthropic",
+   "setting": "effort high",
+   "chips": -1635,
+   "chips_ci95": [
+    -4826,
+    1541
+   ],
+   "ev_chips_per_match": -48.0,
+   "deals_won": 0,
+   "deals_positive": 5,
+   "forced_passes": 0,
+   "per_deal": [
+    -401,
+    313,
+    -810,
+    -7,
+    358,
+    -109,
+    635,
+    226,
+    -858,
+    73,
+    -698,
+    -357
+   ],
+   "by_family": {
+    "clean": -88,
+    "research": -817,
+    "insider": 249,
+    "noisy": 861,
+    "insider_research": -785,
+    "noisy_research": -1055
+   },
+   "ev_by_family": {
+    "clean": -120,
+    "research": -954,
+    "insider": -1009,
+    "noisy": -226,
+    "insider_research": -433,
+    "noisy_research": -714
+   },
+   "behaviour": {
+    "r1_pass_rate": 0.088,
+    "r2_pass_rate": 0.293,
+    "r1_avg_size": 4.89,
+    "r1_max_size_rate": 0.133,
+    "research_rate": 0.35,
+    "fees_paid_per_match": 9.6667,
+    "fees_received_per_match": 10.9583,
+    "trades_per_match": 3.9028,
+    "volume_per_match": 14.3472,
+    "wrong_direction_per_match": 0.5139,
+    "pass_when_should_trade_per_match": 5.1111,
+    "trade_when_should_pass_per_match": 0.6111,
+    "market_read": 0.0909,
+    "belief_logloss": 0.0,
+    "notes_written": 1753
+   },
+   "calls": 1804,
+   "tokens_per_move_median": 378,
+   "tokens_per_move_mean": 445,
+   "latency_s_median": 4.7,
+   "latency_s_p90": 9.3,
+   "cost_usd": 75.46,
+   "cost_usd_per_match": 1.048,
+   "elo": 1459,
+   "elo_ci95": [
+    1346,
+    1561
+   ]
+  },
+  {
+   "key": "gpt-6.2-sol",
+   "name": "GPT-6.2 Sol",
+   "lab": "OpenAI",
+   "setting": "effort high",
+   "chips": -2675,
+   "chips_ci95": [
+    -6235,
+    916
+   ],
+   "ev_chips_per_match": -54.8,
+   "deals_won": 1,
+   "deals_positive": 3,
+   "forced_passes": 0,
+   "per_deal": [
+    -1170,
+    -22,
+    63,
+    -484,
+    -166,
+    -577,
+    494,
+    -378,
+    -300,
+    -23,
+    -904,
+    792
+   ],
+   "by_family": {
+    "clean": -1192,
+    "research": -421,
+    "insider": -743,
+    "noisy": 116,
+    "insider_research": -323,
+    "noisy_research": -112
+   },
+   "ev_by_family": {
+    "clean": -1076,
+    "research": -458,
+    "insider": -610,
+    "noisy": -696,
+    "insider_research": -469,
+    "noisy_research": -636
+   },
+   "behaviour": {
+    "r1_pass_rate": 0.074,
+    "r2_pass_rate": 0.014,
+    "r1_avg_size": 5.98,
+    "r1_max_size_rate": 0.096,
+    "research_rate": 0.464,
+    "fees_paid_per_match": 14.0,
+    "fees_received_per_match": 10.2222,
+    "trades_per_match": 4.4861,
+    "volume_per_match": 18.5139,
+    "wrong_direction_per_match": 0.6528,
+    "pass_when_should_trade_per_match": 4.5694,
+    "trade_when_should_pass_per_match": 0.6528,
+    "market_read": 0.0556,
+    "belief_logloss": 0.0,
+    "notes_written": 29
+   },
+   "calls": 1802,
+   "tokens_per_move_median": 342,
+   "tokens_per_move_mean": 390,
+   "latency_s_median": 8.0,
+   "latency_s_p90": 14.5,
+   "cost_usd": 14.1,
+   "cost_usd_per_match": 0.196,
+   "elo": 1406,
+   "elo_ci95": [
+    1279,
+    1510
+   ]
+  },
+  {
+   "key": "gpt-6.2-astra",
+   "name": "GPT-6.2 Astra",
+   "lab": "OpenAI",
+   "setting": "effort high",
+   "chips": -3606,
+   "chips_ci95": [
+    -8411,
+    1191
+   ],
+   "ev_chips_per_match": -12.4,
+   "deals_won": 2,
+   "deals_positive": 4,
+   "forced_passes": 0,
+   "per_deal": [
+    155,
+    -711,
+    680,
+    -710,
+    -848,
+    -435,
+    -1476,
+    463,
+    -1052,
+    -592,
+    935,
+    -15
+   ],
+   "by_family": {
+    "clean": -556,
+    "research": -30,
+    "insider": -1283,
+    "noisy": -1013,
+    "insider_research": -1644,
+    "noisy_research": 920
+   },
+   "ev_by_family": {
+    "clean": -341,
+    "research": 382,
+    "insider": 94,
+    "noisy": 517,
+    "insider_research": -1586,
+    "noisy_research": 43
+   },
+   "behaviour": {
+    "r1_pass_rate": 0.028,
+    "r2_pass_rate": 0.0,
+    "r1_avg_size": 5.99,
+    "r1_max_size_rate": 0.111,
+    "research_rate": 0.547,
+    "fees_paid_per_match": 20.1944,
+    "fees_received_per_match": 8.9028,
+    "trades_per_match": 7.4722,
+    "volume_per_match": 30.1806,
+    "wrong_direction_per_match": 0.9444,
+    "pass_when_should_trade_per_match": 2.0694,
+    "trade_when_should_pass_per_match": 1.1111,
+    "market_read": 0.041,
+    "belief_logloss": 0.0,
+    "notes_written": 0
+   },
+   "calls": 1800,
+   "tokens_per_move_median": 122,
+   "tokens_per_move_mean": 152,
+   "latency_s_median": 6.3,
+   "latency_s_p90": 11.8,
+   "cost_usd": 30.21,
+   "cost_usd_per_match": 0.42,
+   "elo": 1395,
+   "elo_ci95": [
+    1200,
+    1541
+   ]
+  }
+ ],
+ "xhigh_side_run": [
+  {
+   "key": "gemini-4-carbon",
+   "chips_high": 833,
+   "chips_xhigh": 51,
+   "tokens_high": 7102,
+   "tokens_xhigh": 6514,
+   "setting_xhigh": "unchanged (8k)"
+  },
+  {
+   "key": "gemini-4-argon",
+   "chips_high": 664,
+   "chips_xhigh": 523,
+   "tokens_high": 1440,
+   "tokens_xhigh": 1202,
+   "setting_xhigh": "unchanged (8k)"
+  },
+  {
+   "key": "claude-sonnet-5.5",
+   "chips_high": -81,
+   "chips_xhigh": -348,
+   "tokens_high": 244,
+   "tokens_xhigh": 822,
+   "setting_xhigh": "effort xhigh"
+  },
+  {
+   "key": "claude-fable-5.2",
+   "chips_high": -401,
+   "chips_xhigh": -166,
+   "tokens_high": 617,
+   "tokens_xhigh": 2968,
+   "setting_xhigh": "effort xhigh"
+  },
+  {
+   "key": "gpt-6.2-sol",
+   "chips_high": -1170,
+   "chips_xhigh": 239,
+   "tokens_high": 425,
+   "tokens_xhigh": 908,
+   "setting_xhigh": "effort xhigh"
+  },
+  {
+   "key": "gpt-6.2-astra",
+   "chips_high": 155,
+   "chips_xhigh": -299,
+   "tokens_high": 195,
+   "tokens_xhigh": 372,
+   "setting_xhigh": "effort xhigh"
+  }
+ ],
+ "quotes": [
+  {
+   "model": "gemini-4-carbon",
+   "kind": "abstain",
+   "text": "zero private edge, pure adverse selection either side",
+   "name": "Gemini 4 Carbon"
+  },
+  {
+   "model": "gemini-4-carbon",
+   "kind": "insider",
+   "text": "No buyer has belief in (21.7%, 58.1%), so limit 22 avoids crashing price",
+   "name": "Gemini 4 Carbon"
+  },
+  {
+   "model": "gemini-4-argon",
+   "kind": "market_read",
+   "text": "16 contracts at 77 means 2 other (2R,0B) sellers",
+   "name": "Gemini 4 Argon"
+  },
+  {
+   "model": "gemini-4-argon",
+   "kind": "market_read",
+   "text": "Cleared at 13 -> excess supply at 12.3% posterior",
+   "name": "Gemini 4 Argon"
+  },
+  {
+   "model": "claude-sonnet-5.5",
+   "kind": "defer",
+   "text": "the 77 price as a sign the market is less confident than I am",
+   "name": "Claude Sonnet 5.5"
+  },
+  {
+   "model": "claude-fable-5.2",
+   "kind": "market_read",
+   "text": "I was the only seller at 90, so others lean blue",
+   "name": "Claude Fable 5.2"
+  },
+  {
+   "model": "claude-fable-5.2",
+   "kind": "reversal",
+   "text": "flatten if price >=46",
+   "name": "Claude Fable 5.2"
+  },
+  {
+   "model": "gpt-6.2-sol",
+   "kind": "adverse",
+   "text": "a fill against the red bidders would be informative, so I limit size",
+   "name": "GPT-6.2 Sol"
+  }
+ ],
+ "cost": {
+  "run_usd": 371.0,
+  "match_wall_minutes_median": 53.8
+ }
+}

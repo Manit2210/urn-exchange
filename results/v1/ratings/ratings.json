@@ -1,0 +1,561 @@
+{
+  "cluster": "unit",
+  "games": {
+    "exchange": {
+      "boards": [
+        {
+          "board": "bt",
+          "dropped_units": 0,
+          "metric": "elo",
+          "rows": [
+            {
+              "elo": 1458.689243103113,
+              "hi": 1561.2991935870664,
+              "lo": 1346.354479997419,
+              "model": "claude-fable-5.2",
+              "n": 60,
+              "rank": 4
+            },
+            {
+              "elo": 1520.1695566032101,
+              "hi": 1643.1977404133986,
+              "lo": 1413.3175698106202,
+              "model": "claude-sonnet-5.5",
+              "n": 60,
+              "rank": 3
+            },
+            {
+              "elo": 1615.6115216322216,
+              "hi": 1769.3166088901144,
+              "lo": 1519.4597210149311,
+              "model": "gemini-4-argon",
+              "n": 60,
+              "rank": 1
+            },
+            {
+              "elo": 1604.504146158986,
+              "hi": 1746.4638803838425,
+              "lo": 1489.675769047074,
+              "model": "gemini-4-carbon",
+              "n": 60,
+              "rank": 2
+            },
+            {
+              "elo": 1395.0583195246245,
+              "hi": 1540.8763636144895,
+              "lo": 1200.1976685442871,
+              "model": "gpt-6.2-astra",
+              "n": 60,
+              "rank": 6
+            },
+            {
+              "elo": 1405.9672129778448,
+              "hi": 1509.969083702888,
+              "lo": 1278.8136186105758,
+              "model": "gpt-6.2-sol",
+              "n": 60,
+              "rank": 5
+            }
+          ],
+          "units": 12
+        }
+      ],
+      "chips": [
+        {
+          "chips": -1635.0,
+          "deals": 12,
+          "deals_positive": 5,
+          "ev_chips_per_match": -48.01803098767038,
+          "hi": 1541.0,
+          "lo": -4826.0,
+          "model": "claude-fable-5.2",
+          "rank": 4
+        },
+        {
+          "chips": -315.0,
+          "deals": 12,
+          "deals_positive": 5,
+          "ev_chips_per_match": -8.275445554429346,
+          "hi": 3270.0,
+          "lo": -3806.0,
+          "model": "claude-sonnet-5.5",
+          "rank": 3
+        },
+        {
+          "chips": 3619.0,
+          "deals": 12,
+          "deals_positive": 9,
+          "ev_chips_per_match": 11.630668527073858,
+          "hi": 6528.0,
+          "lo": 788.0,
+          "model": "gemini-4-argon",
+          "rank": 2
+        },
+        {
+          "chips": 4612.0,
+          "deals": 12,
+          "deals_positive": 10,
+          "ev_chips_per_match": 111.82992741742622,
+          "hi": 8839.0,
+          "lo": 548.0,
+          "model": "gemini-4-carbon",
+          "rank": 1
+        },
+        {
+          "chips": -3606.0,
+          "deals": 12,
+          "deals_positive": 4,
+          "ev_chips_per_match": -12.370010458362609,
+          "hi": 1191.0,
+          "lo": -8411.0,
+          "model": "gpt-6.2-astra",
+          "rank": 6
+        },
+        {
+          "chips": -2675.0,
+          "deals": 12,
+          "deals_positive": 3,
+          "ev_chips_per_match": -54.797108944037745,
+          "hi": 916.0,
+          "lo": -6235.0,
+          "model": "gpt-6.2-sol",
+          "rank": 5
+        }
+      ],
+      "headline": {
+        "belief_logloss": "lower_is_better",
+        "chips": "higher_is_better",
+        "market_read": "lower_is_better",
+        "trade_regret": "lower_is_better"
+      },
+      "kind": "multi",
+      "matches_not_ok": 0,
+      "matches_ok": 72
+    }
+  },
+  "highlights": {
+    "exchange": [
+      {
+        "excerpt": [
+          {
+            "action": "{\"belief\": {\"p_a\": 0.076}, \"limit\": 9, \"side\": \"sell\", \"size\": 2}",
+            "model": "gpt-6.2-astra",
+            "seat": 2
+          },
+          {
+            "action": "{\"belief\": {\"p_a\": 0.091}, \"limit\": 13, \"side\": \"sell\", \"size\": 6}",
+            "model": "gpt-6.2-sol",
+            "seat": 3
+          },
+          {
+            "action": "{\"belief\": {\"p_a\": 0.08}, \"limit\": 12, \"note\": \"Cleared at 15x1 -> likely 1-2 private Reds among others -> P(A)~0.08\", \"side\": \"sell\", \"size\": 6}",
+            "model": "gemini-4-argon",
+            "seat": 4
+          },
+          {
+            "action": "{\"belief\": {\"p_a\": 0.134}, \"limit\": 14, \"side\": \"sell\", \"size\": 1}",
+            "model": "gemini-4-carbon",
+            "seat": 5
+          }
+        ],
+        "match_id": "exchange/full-04/s0/g0/r4/claude-fable-5.2+claude-sonnet-5.5+gpt-6.2-astra+gpt-6.2-sol+gemini-4-argon+gemini-4-carbon",
+        "payoffs": [
+          290.0,
+          -594.0,
+          -380.0,
+          546.0,
+          948.0,
+          -810.0
+        ],
+        "revealed": "{\"deal\": \"full-04\", \"family\": \"noisy\", \"hands\": [{\"balls\": [[\"red\", \"red\"], [\"red\", \"blue\"], [\"blue\", \"blue\"], [\"red\", \"blue\"], [\"red\", \"blue\"], [\"blue\", \"blue\"]], \"bankroll\": [961, 1000, 1039, 1000, 1000, 1000], \"hand\": 1, \"pnl\": [-39, 0, 39, 0, 0, 0], \"pooled_posterior\": 0.02322046350340246, \"p...",
+        "seating": [
+          "claude-fable-5.2",
+          "claude-sonnet-5.5",
+          "gpt-6.2-astra",
+          "gpt-6.2-sol",
+          "gemini-4-argon",
+          "gemini-4-carbon"
+        ],
+        "type": "chip_swing"
+      },
+      {
+        "excerpt": [
+          {
+            "action": "{\"belief\": {\"p_a\": 0.13}, \"limit\": 50, \"side\": \"pass\", \"size\": 0}",
+            "model": "claude-sonnet-5.5",
+            "seat": 2
+          },
+          {
+            "action": "{\"belief\": {\"p_a\": 0.07}, \"limit\": 8, \"side\": \"sell\", \"size\": 5}",
+            "model": "gpt-6.2-astra",
+            "seat": 3
+          },
+          {
+            "action": "{\"belief\": {\"p_a\": 0.087}, \"limit\": 12, \"side\": \"sell\", \"size\": 7}",
+            "model": "gpt-6.2-sol",
+            "seat": 4
+          },
+          {
+            "action": "{\"belief\": {\"p_a\": 0.068}, \"limit\": 9, \"note\": \"cleared 14 x 2, we bought all 2 -> others have B\", \"side\": \"sell\", \"size\": 4}",
+            "model": "gemini-4-argon",
+            "seat": 5
+          }
+        ],
+        "match_id": "exchange/full-04/s0/g0/r3/gemini-4-carbon+claude-fable-5.2+claude-sonnet-5.5+gpt-6.2-astra+gpt-6.2-sol+gemini-4-argon",
+        "payoffs": [
+          183.0,
+          -409.0,
+          57.0,
+          104.0,
+          789.0,
+          -724.0
+        ],
+        "revealed": "{\"deal\": \"full-04\", \"family\": \"noisy\", \"hands\": [{\"balls\": [[\"red\", \"red\"], [\"red\", \"blue\"], [\"blue\", \"blue\"], [\"red\", \"blue\"], [\"red\", \"blue\"], [\"blue\", \"blue\"]], \"bankroll\": [925, 1000, 1000, 1000, 1000, 1075], \"hand\": 1, \"pnl\": [-75, 0, 0, 0, 0, 75], \"pooled_posterior\": 0.02322046350340246, \"p...",
+        "seating": [
+          "gemini-4-carbon",
+          "claude-fable-5.2",
+          "claude-sonnet-5.5",
+          "gpt-6.2-astra",
+          "gpt-6.2-sol",
+          "gemini-4-argon"
+        ],
+        "type": "chip_swing"
+      },
+      {
+        "excerpt": [
+          {
+            "action": "{\"belief\": {\"p_a\": 0.231}, \"limit\": 25, \"side\": \"buy\", \"size\": 6}",
+            "model": "gpt-6.2-astra",
+            "seat": 2
+          },
+          {
+            "action": "{\"belief\": {\"p_a\": 0.084}, \"limit\": 20, \"side\": \"sell\", \"size\": 5}",
+            "model": "gpt-6.2-sol",
+            "seat": 3
+          },
+          {
+            "action": "{\"belief\": {\"p_a\": 0.21}, \"limit\": 17, \"side\": \"buy\", \"size\": 1}",
+            "model": "gemini-4-argon",
+            "seat": 4
+          },
+          {
+            "action": "{\"belief\": {\"p_a\": 0.195}, \"note\": \"6 @ 21 rules out >5-size 3B buyers (little b>=10) and rules out heavy <=16 supply (little b<=7) => b~8 (12.3%) and b=9 (27.5%), p_a~0.195. Kelly at c~20-21 is ~0; pass R2.\", \"side\":...",
+            "model": "gemini-4-carbon",
+            "seat": 5
+          }
+        ],
+        "match_id": "exchange/full-06/s1/g0/r4/claude-fable-5.2+claude-sonnet-5.5+gpt-6.2-astra+gpt-6.2-sol+gemini-4-argon+gemini-4-carbon",
+        "payoffs": [
+          1056.0,
+          -95.0,
+          54.0,
+          -167.0,
+          -455.0,
+          -393.0
+        ],
+        "revealed": "{\"deal\": \"full-06\", \"family\": \"noisy_research\", \"hands\": [{\"balls\": [[\"red\", \"red\", \"blue\"], [\"red\", \"blue\"], [\"red\", \"blue\", \"red\"], [\"blue\", \"blue\", \"red\"], [\"blue\", \"blue\"], [\"red\", \"red\"]], \"bankroll\": [1077, 1005, 1144, 831, 841, 1102], \"hand\": 1, \"pnl\": [82, 0, 149, -164, -164, 97], \"pooled...",
+        "seating": [
+          "claude-fable-5.2",
+          "claude-sonnet-5.5",
+          "gpt-6.2-astra",
+          "gpt-6.2-sol",
+          "gemini-4-argon",
+          "gemini-4-carbon"
+        ],
+        "type": "chip_swing"
+      },
+      {
+        "match_id": "exchange/full-01/s1/g0/r3/gemini-4-carbon+claude-fable-5.2+claude-sonnet-5.5+gpt-6.2-astra+gpt-6.2-sol+gemini-4-argon",
+        "model": "claude-sonnet-5.5",
+        "seat": 2,
+        "type": "largest_belief_logloss",
+        "value": 0.010602905293771132
+      },
+      {
+        "match_id": "exchange/full-03/s1/g0/r1/gpt-6.2-sol+gemini-4-argon+gemini-4-carbon+claude-fable-5.2+claude-sonnet-5.5+gpt-6.2-astra",
+        "model": "claude-sonnet-5.5",
+        "seat": 4,
+        "type": "largest_belief_logloss",
+        "value": 0.0034540554671933766
+      },
+      {
+        "match_id": "exchange/full-06/s1/g0/r1/gpt-6.2-sol+gemini-4-argon+gemini-4-carbon+claude-fable-5.2+claude-sonnet-5.5+gpt-6.2-astra",
+        "model": "gemini-4-argon",
+        "seat": 1,
+        "type": "largest_belief_logloss",
+        "value": 0.002708706136751534
+      }
+    ]
+  },
+  "n_boot": 1000,
+  "profile": [
+    {
+      "direction": "higher_is_better",
+      "game": "exchange",
+      "hi": 19.16249999999999,
+      "lo": -66.0,
+      "metric": "chips",
+      "model": "claude-fable-5.2",
+      "n": 72,
+      "rank": 4,
+      "value": -22.708333333333332
+    },
+    {
+      "direction": "higher_is_better",
+      "game": "exchange",
+      "hi": 38.34999999999997,
+      "lo": -49.11423611111111,
+      "metric": "chips",
+      "model": "claude-sonnet-5.5",
+      "n": 72,
+      "rank": 3,
+      "value": -4.375
+    },
+    {
+      "direction": "higher_is_better",
+      "game": "exchange",
+      "hi": 89.97534722222223,
+      "lo": 11.420833333333334,
+      "metric": "chips",
+      "model": "gemini-4-argon",
+      "n": 72,
+      "rank": 2,
+      "value": 50.263888888888886
+    },
+    {
+      "direction": "higher_is_better",
+      "game": "exchange",
+      "hi": 123.54548611111112,
+      "lo": 8.069444444444445,
+      "metric": "chips",
+      "model": "gemini-4-carbon",
+      "n": 72,
+      "rank": 1,
+      "value": 64.05555555555556
+    },
+    {
+      "direction": "higher_is_better",
+      "game": "exchange",
+      "hi": 19.774652777777767,
+      "lo": -112.33958333333332,
+      "metric": "chips",
+      "model": "gpt-6.2-astra",
+      "n": 72,
+      "rank": 6,
+      "value": -50.083333333333336
+    },
+    {
+      "direction": "higher_is_better",
+      "game": "exchange",
+      "hi": 11.896527777777758,
+      "lo": -84.65659722222222,
+      "metric": "chips",
+      "model": "gpt-6.2-sol",
+      "n": 72,
+      "rank": 5,
+      "value": -37.15277777777778
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 7.790525962237003e-06,
+      "lo": 2.458367690717321e-07,
+      "metric": "belief_logloss",
+      "model": "claude-fable-5.2",
+      "n": 72,
+      "rank": 3,
+      "value": 2.7772489649992236e-06
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 0.0006574112132049859,
+      "lo": 0.00010210619424291838,
+      "metric": "belief_logloss",
+      "model": "claude-sonnet-5.5",
+      "n": 72,
+      "rank": 6,
+      "value": 0.0003418475618483879
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 0.00023750721503864184,
+      "lo": 5.929724156555991e-05,
+      "metric": "belief_logloss",
+      "model": "gemini-4-argon",
+      "n": 72,
+      "rank": 5,
+      "value": 0.0001438045589083006
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 9.887068979549657e-09,
+      "lo": 9.46926455715605e-10,
+      "metric": "belief_logloss",
+      "model": "gemini-4-carbon",
+      "n": 72,
+      "rank": 2,
+      "value": 4.142358609758786e-09
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 1.9292789618128988e-09,
+      "lo": 3.708252607749593e-11,
+      "metric": "belief_logloss",
+      "model": "gpt-6.2-astra",
+      "n": 72,
+      "rank": 1,
+      "value": 8.25043874687453e-10
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 7.168517162150823e-05,
+      "lo": 7.880869498141284e-06,
+      "metric": "belief_logloss",
+      "model": "gpt-6.2-sol",
+      "n": 72,
+      "rank": 4,
+      "value": 3.550154318841984e-05
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 0.11276134311610204,
+      "lo": 0.07098559291446731,
+      "metric": "market_read",
+      "model": "claude-fable-5.2",
+      "n": 72,
+      "rank": 5,
+      "value": 0.09090422779692811
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 0.1569216091292463,
+      "lo": 0.10434583714480726,
+      "metric": "market_read",
+      "model": "claude-sonnet-5.5",
+      "n": 72,
+      "rank": 6,
+      "value": 0.1286353428194012
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 0.06784566610991745,
+      "lo": 0.033989844177861224,
+      "metric": "market_read",
+      "model": "gemini-4-argon",
+      "n": 72,
+      "rank": 3,
+      "value": 0.050145271299274354
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 0.04239521714373313,
+      "lo": 0.024012374167448995,
+      "metric": "market_read",
+      "model": "gemini-4-carbon",
+      "n": 72,
+      "rank": 1,
+      "value": 0.03262102623206717
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 0.05433307225529065,
+      "lo": 0.028808519141359665,
+      "metric": "market_read",
+      "model": "gpt-6.2-astra",
+      "n": 72,
+      "rank": 2,
+      "value": 0.04099747112507479
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 0.0668956264994538,
+      "lo": 0.04435611299789114,
+      "metric": "market_read",
+      "model": "gpt-6.2-sol",
+      "n": 72,
+      "rank": 4,
+      "value": 0.05558022000307478
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 459.15414253870097,
+      "lo": 317.69695871561777,
+      "metric": "trade_regret",
+      "model": "claude-fable-5.2",
+      "n": 72,
+      "rank": 5,
+      "value": 385.09751060118117
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 482.8344643309687,
+      "lo": 344.71029048982444,
+      "metric": "trade_regret",
+      "model": "claude-sonnet-5.5",
+      "n": 72,
+      "rank": 6,
+      "value": 414.44251829878647
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 424.1441296006995,
+      "lo": 305.15171759830747,
+      "metric": "trade_regret",
+      "model": "gemini-4-argon",
+      "n": 72,
+      "rank": 4,
+      "value": 363.6728943026213
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 416.27960605723047,
+      "lo": 303.8336273390439,
+      "metric": "trade_regret",
+      "model": "gemini-4-carbon",
+      "n": 72,
+      "rank": 3,
+      "value": 359.77582152775267
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 358.8249699910405,
+      "lo": 229.27863781162935,
+      "metric": "trade_regret",
+      "model": "gpt-6.2-astra",
+      "n": 72,
+      "rank": 1,
+      "value": 290.4846763090461
+    },
+    {
+      "direction": "lower_is_better",
+      "game": "exchange",
+      "hi": 415.68481415324067,
+      "lo": 299.5579897271908,
+      "metric": "trade_regret",
+      "model": "gpt-6.2-sol",
+      "n": 72,
+      "rank": 2,
+      "value": 355.93490750251414
+    }
+  ],
+  "seed": 20261116,
+  "sources": [
+    "urn-exchange-v1-traces.jsonl.gz"
+  ]
+}

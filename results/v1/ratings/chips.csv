@@ -1,0 +1,7 @@
+game,model,rank,chips,lo,hi,deals,deals_positive,ev_chips_per_match
+exchange,claude-fable-5.2,4,-1635.0,-4826.0,1541.0,12,5,-48.01803098767038
+exchange,claude-sonnet-5.5,3,-315.0,-3806.0,3270.0,12,5,-8.275445554429346
+exchange,gemini-4-argon,2,3619.0,788.0,6528.0,12,9,11.630668527073858
+exchange,gemini-4-carbon,1,4612.0,548.0,8839.0,12,10,111.82992741742622
+exchange,gpt-6.2-astra,6,-3606.0,-8411.0,1191.0,12,4,-12.370010458362609
+exchange,gpt-6.2-sol,5,-2675.0,-6235.0,916.0,12,3,-54.797108944037745

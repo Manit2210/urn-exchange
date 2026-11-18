@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+
+# Secrets: keys live in the environment only
+.env
+.env.*
+!.env.example
+
+# Local runs (results/v1 is committed)
+results/runs/
+results/cache/
+results/*.sqlite
+results/*.sqlite-*
+
+# Trace files are attached to the GitHub release, not committed
+traces/*.jsonl
+traces/*.jsonl.gz
+traces/*.gz.part*
+
+.DS_Store

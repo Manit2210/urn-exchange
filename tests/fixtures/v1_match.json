@@ -1,0 +1,1761 @@
+{
+ "actions": {
+  "0": [
+   {
+    "belief": {
+     "p_a": 0.5813
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.5813
+    },
+    "limit": 74,
+    "side": "sell",
+    "size": 2
+   },
+   {
+    "belief": {
+     "p_a": 0.85
+    },
+    "limit": 80,
+    "side": "buy",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.8571
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.8571
+    },
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.72
+    },
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.16
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.16
+    },
+    "limit": 22,
+    "side": "sell",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.15
+    },
+    "limit": 20,
+    "side": "sell",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.9561
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.9561
+    },
+    "limit": 89,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.998
+    },
+    "limit": 98,
+    "side": "buy",
+    "size": 9
+   },
+   {
+    "belief": {
+     "p_a": 0.0826
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.0826
+    },
+    "limit": 17,
+    "side": "sell",
+    "size": 6
+   },
+   {
+    "belief": {
+     "p_a": 0.005
+    },
+    "limit": 4,
+    "side": "sell",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.9119
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.9119
+    },
+    "limit": 86,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.99
+    },
+    "limit": 95,
+    "side": "buy",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.9
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.9
+    },
+    "limit": 84,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.9998
+    },
+    "limit": 99,
+    "side": "buy",
+    "size": 9
+   },
+   {
+    "belief": {
+     "p_a": 0.5
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.25
+    },
+    "limit": 34,
+    "side": "sell",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.001
+    },
+    "limit": 2,
+    "side": "sell",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.001
+    },
+    "limit": 2,
+    "side": "sell",
+    "size": 9
+   },
+   {
+    "belief": {
+     "p_a": 0.8
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.8
+    },
+    "limit": 72,
+    "side": "buy",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.999
+    },
+    "limit": 99,
+    "side": "buy",
+    "size": 9
+   },
+   {
+    "belief": {
+     "p_a": 0.5765
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.5765
+    },
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.9995
+    },
+    "limit": 98,
+    "side": "buy",
+    "size": 9
+   }
+  ],
+  "1": [
+   {
+    "belief": {
+     "p_a": 0.133663
+    },
+    "note": "p_a = 27/202. Blue ball already strong signal against A; 8 chips too expensive given 10-size cap.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.133663
+    },
+    "limit": 22,
+    "note": "p_a=27/202. Sell 7 at limit 22 (near Kelly for c=25..35, protects against weak edge below 22).",
+    "side": "sell",
+    "size": 7
+   },
+   {
+    "belief": {
+     "p_a": 0.96
+    },
+    "limit": 90,
+    "note": "R1 74 vol 9 (we sold 7) => S5 has 3R/4R (only seat >71.4%) and <=2 other sells => ~11R 1B, p_a~0.96. Cover -7 & flip long.",
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.857143
+    },
+    "note": "p_a = 6/7 = 0.857143. High certainty already; 8 chips (~1% bankroll) too costly vs shading R1 size.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.857143
+    },
+    "limit": 77,
+    "note": "p_a = 6/7. Kelly at c=75..78 is ~4 contracts; size 4 limits adverse selection if the 3 researchers drew red.",
+    "side": "buy",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.75
+    },
+    "limit": 77,
+    "note": "R1 71x9 (we bought 4@77) => p_low>=65, most likely r=4 (p_all=0.826) or r=5 (0.441), E[p_all]~0.75. Trim 2 of +4 at >=77.",
+    "side": "sell",
+    "size": 2
+   },
+   {
+    "belief": {
+     "p_a": 0.16
+    },
+    "note": "Exact p_a = 4/25 = 0.16. Research fee 25 is way too high for a 60/40 signal.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.16
+    },
+    "limit": 21,
+    "note": "Exact p_a = 0.16. 0 researchers => 9 balls total, others at 7.8%, 16%, 30%, or 49.1%. Sell 4 @ 21 matches 30% buyers (~24-26) near Kelly.",
+    "side": "sell",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.091
+    },
+    "limit": 14,
+    "note": "R1 20x5 (our sell 4@21 unfilled) => buys(21)<=5 & p_low>=19 => r=2 (5.3%) or r=3 (11.3%), E[p_all]~0.091. Sell 3 @ 14 (+Kelly even for r=3).",
+    "side": "sell",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.956098
+    },
+    "note": "Exact p_a = 196/205 = 0.956098. Even a red ball leaves p_a = 28/31 = 90.3%, so 8 chips for research is never worth it.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.956098
+    },
+    "limit": 91,
+    "note": "Exact p_a = 196/205 = 0.956098. 0 researchers => S5 unlikely 3R; if 1-2 regulars sell from 80%, p_all is 98-99.9%. Buy 5 @ 91 (exact Kelly).",
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.995
+    },
+    "limit": 97,
+    "note": "R1 no trade (best bid 92, best ask -) => zero sellers & no >92 bid; most likely r=1 (S5=2B1R + 4x1B => p_all=0.9993) or r=2 (0.9964). Buy 7 @ 97.",
+    "side": "buy",
+    "size": 7
+   },
+   {
+    "belief": {
+     "p_a": 0.447514
+    },
+    "note": "Exact p_a = 81/181 = 0.447514. Research for 3 chips swings p_a to 59.3% (red) vs 13.9% (blue) \u2014 massive EV gain!",
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.593165
+    },
+    "limit": 52,
+    "note": "Exact p_a = 729/1229 = 0.593165. 2 players skipped 3-chip research => likely ~2 initial blues; buy 3 @ 52 matches Kelly at 51-52 while capping adverse selection.",
+    "side": "buy",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.0056
+    },
+    "limit": 1,
+    "note": "R1 13x3 (only our buy 3@52 filled!) => all 5 other seats sold (each >=1B) => b>=5 out of 10 other balls, p_all~0.0056. Sell 4 @ 1 (exact Kelly at 1; clears at 2 vs bid 2).",
+    "side": "sell",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.75
+    },
+    "note": "1R and 1B cancel exactly under 65/35 urns => p_a = prior = 0.75. 8-chip fee too high for a 65/35 ball given R1 adverse selection caps size.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.75
+    },
+    "limit": 82,
+    "note": "Exact p_a = 0.75 (1R and 1B cancel). Sell 4 @ 82 matches 91.2% buyers (~85-87), near Kelly at 82-84, risking only ~60 chips if A.",
+    "side": "sell",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.984
+    },
+    "limit": 97,
+    "note": "R1 91x4 (only our 4@82 sold) => S5 has 3R (97.3%) & zero other <=91 sellers => 7R1B (99.2%) or 6R2B (97.3%), E[p_all]~0.984. Buy 7 @ 97 to cover -4 & flip +3.",
+    "side": "buy",
+    "size": 7
+   },
+   {
+    "belief": {
+     "p_a": 0.9
+    },
+    "note": "Exact p_a = 9/10 = 0.9. 25 chips for research is far too expensive at p_a = 0.9.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.9
+    },
+    "limit": 85,
+    "note": "Exact p_a = 0.9. 0 researchers => 9 balls, beliefs in {98.8, 90, 50, 10}. Buy 5 @ 85 competes for 50%-seller supply when b=1..3 (p_all 96.4-99.95%).",
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.9999
+    },
+    "limit": 99,
+    "note": "R1 no trade (best bid 96, best ask -) => S5 has 3R (98.78%, only hand >90%) and all 4 other regulars have 1R => 9R 0B, p_all = 19683/19684 = 0.99995. Buy 8 @ 99 (max legal & exact Kelly).",
+    "side": "buy",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.1
+    },
+    "note": "Exact p_a = 1/10 = 0.1. For only 3 chips, a 75/25 ball swings p_a to 25.0% (30% prob, buyer at ~15) vs 3.57% (70% prob, strong seller at ~8-15) \u2014 well worth 3 chips.",
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.035714
+    },
+    "limit": 7,
+    "note": "Exact p_a = 1/28 = 0.035714. Sell 6 @ 7 beats 8-10 sellers for 25%-buyer demand (where p_all ~ 0.01-0.14%), near Kelly at c=8..14, safe bankroll (558 < 877).",
+    "side": "sell",
+    "size": 6
+   },
+   {
+    "belief": {
+     "p_a": 0.0001
+    },
+    "limit": 1,
+    "note": "R1 5x6 (our sell 6@7 unfilled) => S5 has 3B (1.22%, the 1 non-researcher) & buys(7)<=6 => r=1..2 out of 8 reg balls, p_all ~ 0.00002-0.00015. Sell 8 @ 1 (max legal 8*99=792<877).",
+    "side": "sell",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.8
+    },
+    "note": "Exact p_a = 4/5 = 0.8. 72% chance research draws red (88.9%, same buy side); 28% blue (57.1%) saves ~5.5 EV chips < 8-chip fee when R1 size is shaded to 3-4.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.8
+    },
+    "limit": 71,
+    "note": "Exact p_a = 0.8. 3 researchers => if b=4 then p_all=76.0%, so limit 71 stays safely below 76% while matching Kelly (~4 contracts at c=68..71).",
+    "side": "buy",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.993
+    },
+    "limit": 96,
+    "note": "R1 no trade (best bid 87, best ask -) => 2R reg bid 87 (88.9%), S5 likely 3R1B (84.2%) or 2R1B, zero <=57% sellers => b=1 (99.85%) or b=2 (99.13%), E[p_all]~0.993. Buy 6 @ 96.",
+    "side": "buy",
+    "size": 6
+   },
+   {
+    "belief": {
+     "p_a": 0.576471
+    },
+    "note": "Exact p_a = 49/85 = 0.576471. Near 50% with strong 70/30 signal & active two-sided market (47% of regulars at 20%): research swings p_a to 76.1% vs 36.8%, well worth 8 chips.",
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.760532
+    },
+    "limit": 69,
+    "note": "Exact p_a = 343/451 = 0.760532. 3 other researchers likely started at 57.6%, so b<=4 gives p_all 94.5-99.8%; buy 5 @ 69 competes for 20%/36.8% seller supply while capping risk if b=6.",
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.9988
+    },
+    "limit": 98,
+    "note": "R1 no trade (best bid 70, best ask -) => zero <=36.8% sellers & S5 not 3R/4R => S5=3R1B (or 2R1B) + regulars 2R/1R => 12R 1B (p_all=0.9996) or 11R 2B (0.9981), E[p_all]~0.9988. Buy 8 @ 98.",
+    "side": "buy",
+    "size": 8
+   }
+  ],
+  "2": [
+   {
+    "belief": {
+     "p_a": 0.581
+    },
+    "note": "Posterior after 2 red = 0.243/0.418 = 0.581. Extra ball moves belief to 0.714 or 0.217; worth 8.",
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.714
+    },
+    "limit": 64,
+    "note": "3 reds: posterior 0.714. Buy with margin for adverse selection.",
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.85
+    },
+    "limit": 80,
+    "note": "Clearing at 74 implies a buyer with ~4 reds (likely insider 3 red). Combined with my 3 reds ~0.85-0.89.",
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.5
+    },
+    "note": "Blue+red: 0.096 vs 0.096 = 0.5. Research informative.",
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.667
+    },
+    "note": "Posterior 0.667, middle of likely market range; adverse selection either side. Pass and read round 1.",
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.7
+    },
+    "note": "Market 71 close to my own 0.667; no edge.",
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.3
+    },
+    "note": "Blue+red cancel: 0.3. Weak ball, fee 25: skip.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.3
+    },
+    "note": "Belief 0.3; weak signals, no edge vs expected price. Pass, read round 1.",
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.23
+    },
+    "note": "Clearing at 20 suggests sellers saw blue; combined ~0.23. No edge.",
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.956
+    },
+    "note": "2 blue: 0.392/0.41=0.956. Extra ball moves little; skip.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.956
+    },
+    "limit": 91,
+    "note": "Posterior 0.956; buy below with margin.",
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.96
+    },
+    "limit": 93,
+    "note": "No sellers in R1, bid at 92 from another: nobody bearish. ~0.96.",
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.448
+    },
+    "note": "0.162/0.362=0.448. Fee 3, informative ball: buy.",
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.139
+    },
+    "limit": 30,
+    "note": "Posterior 0.139 (blue is strong vs A). Sell above with margin; size shaded for adverse selection.",
+    "side": "sell",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.06
+    },
+    "limit": 12,
+    "note": "Clearing at 13 implies other sellers saw blue too; combined ~0.06. Small sell.",
+    "side": "sell",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.912
+    },
+    "note": "2 red: 0.3169/0.3475=0.912. Extra ball moves little; skip.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.912
+    },
+    "limit": 87,
+    "note": "Posterior 0.912; buy with margin.",
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.94
+    },
+    "limit": 92,
+    "note": "Buyer at 91+ suggests insider with reds; combined ~0.94.",
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.9
+    },
+    "note": "2 red: 0.9. Fee 25 too high for remaining uncertainty.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.9
+    },
+    "limit": 85,
+    "note": "Posterior 0.9; buy with margin.",
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.97
+    },
+    "limit": 95,
+    "note": "Bid at 96 by another implies insider 3 reds; no sellers. ~0.97.",
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.5
+    },
+    "note": "Blue+red cancel: 0.5. Fee 3, ball moves to 0.75/0.25: buy.",
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.75
+    },
+    "limit": 66,
+    "note": "Posterior 0.75; buy below with margin for adverse selection.",
+    "side": "buy",
+    "size": 6
+   },
+   {
+    "belief": {
+     "p_a": 0.03
+    },
+    "limit": 5,
+    "note": "Clearing at 5 with layered sells implies several very bearish players (many blues). Flatten if possible.",
+    "side": "sell",
+    "size": 6
+   },
+   {
+    "belief": {
+     "p_a": 0.8
+    },
+    "note": "2 red: 0.8. Ball moves to 0.889/0.571; fee 8 ok.",
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.889
+    },
+    "limit": 84,
+    "note": "3 reds: 8/9. Buy with margin.",
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.93
+    },
+    "limit": 88,
+    "note": "Other bid at 87, no sellers: nobody bearish. ~0.93.",
+    "side": "buy",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.576
+    },
+    "note": "0.098/0.17=0.576. Ball moves to 0.76/0.37: buy.",
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.76
+    },
+    "limit": 68,
+    "note": "3 reds: 0.760. Buy with margin.",
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.85
+    },
+    "limit": 76,
+    "note": "Another bid 70, no sellers at all: nobody bearish. ~0.85.",
+    "side": "buy",
+    "size": 10
+   }
+  ],
+  "3": [
+   {
+    "belief": {
+     "p_a": 0.581
+    },
+    "note": "Skip research; fee 8 is high vs. small edge.",
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.58
+    },
+    "limit": 52,
+    "side": "buy",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.72
+    },
+    "limit": 50,
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.857
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.857
+    },
+    "limit": 76,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.78
+    },
+    "limit": 50,
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.16
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.16
+    },
+    "limit": 24,
+    "side": "sell",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.18
+    },
+    "limit": 50,
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.956
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.956
+    },
+    "limit": 90,
+    "side": "buy",
+    "size": 6
+   },
+   {
+    "belief": {
+     "p_a": 0.95
+    },
+    "limit": 91,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.447
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.14
+    },
+    "limit": 22,
+    "side": "sell",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.12
+    },
+    "limit": 50,
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.912
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.912
+    },
+    "limit": 84,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.92
+    },
+    "limit": 50,
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.9
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.9
+    },
+    "limit": 82,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.95
+    },
+    "limit": 90,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.1
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.25
+    },
+    "limit": 32,
+    "side": "sell",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.06
+    },
+    "limit": 50,
+    "side": "pass",
+    "size": 0
+   },
+   {
+    "belief": {
+     "p_a": 0.8
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.8
+    },
+    "limit": 70,
+    "side": "buy",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.88
+    },
+    "limit": 80,
+    "side": "buy",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.576
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.576
+    },
+    "limit": 50,
+    "side": "buy",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.75
+    },
+    "limit": 60,
+    "side": "buy",
+    "size": 2
+   }
+  ],
+  "4": [
+   {
+    "belief": {
+     "p_a": 0.818145
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.89009
+    },
+    "limit": 74,
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.976
+    },
+    "limit": 85,
+    "side": "buy",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.8
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.57142857
+    },
+    "limit": 66,
+    "side": "sell",
+    "size": 9
+   },
+   {
+    "belief": {
+     "p_a": 0.891
+    },
+    "limit": 86,
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.16
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.16
+    },
+    "limit": 20,
+    "side": "sell",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.145
+    },
+    "limit": 18,
+    "side": "buy",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.95609756
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.95609756
+    },
+    "limit": 92,
+    "side": "buy",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.991
+    },
+    "limit": 97,
+    "side": "buy",
+    "size": 9
+   },
+   {
+    "belief": {
+     "p_a": 0.03138318
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.03138318
+    },
+    "limit": 10,
+    "side": "sell",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.0028
+    },
+    "limit": 3,
+    "side": "sell",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.972741
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.97274
+    },
+    "limit": 94,
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.982
+    },
+    "limit": 95,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.987804878
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.987804878
+    },
+    "limit": 96,
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.99937
+    },
+    "limit": 99,
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.012195122
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.012195122
+    },
+    "limit": 4,
+    "side": "sell",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.00094
+    },
+    "limit": 2,
+    "side": "sell",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.727272727
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.842105263
+    },
+    "limit": 76,
+    "side": "buy",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.993
+    },
+    "limit": 97,
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.576470588
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.76053215
+    },
+    "limit": 62,
+    "side": "buy",
+    "size": 10
+   },
+   {
+    "belief": {
+     "p_a": 0.984
+    },
+    "limit": 94,
+    "side": "buy",
+    "size": 10
+   }
+  ],
+  "5": [
+   {
+    "belief": {
+     "p_a": 0.5813397129186603
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.7142390594382756
+    },
+    "limit": 60,
+    "side": "buy",
+    "size": 6
+   },
+   {
+    "belief": {
+     "p_a": 0.88
+    },
+    "limit": 82,
+    "side": "buy",
+    "size": 7
+   },
+   {
+    "belief": {
+     "p_a": 0.8571428571428571
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.6666666666666666
+    },
+    "limit": 56,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.76
+    },
+    "limit": 69,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.3
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.3
+    },
+    "limit": 23,
+    "side": "buy",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.225
+    },
+    "limit": 24,
+    "side": "sell",
+    "size": 5
+   },
+   {
+    "belief": {
+     "p_a": 0.9560975609756097
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.9560975609756097
+    },
+    "limit": 91,
+    "side": "buy",
+    "size": 7
+   },
+   {
+    "belief": {
+     "p_a": 0.973
+    },
+    "limit": 93,
+    "side": "buy",
+    "size": 7
+   },
+   {
+    "belief": {
+     "p_a": 0.08256880733944955
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.13941480206540446
+    },
+    "limit": 25,
+    "side": "sell",
+    "size": 7
+   },
+   {
+    "belief": {
+     "p_a": 0.028
+    },
+    "limit": 10,
+    "side": "sell",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.75
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.8478260869565217
+    },
+    "limit": 79,
+    "side": "buy",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.933
+    },
+    "limit": 91,
+    "side": "buy",
+    "size": 3
+   },
+   {
+    "belief": {
+     "p_a": 0.9
+    },
+    "research": false
+   },
+   {
+    "belief": {
+     "p_a": 0.9
+    },
+    "limit": 87,
+    "side": "buy",
+    "size": 6
+   },
+   {
+    "belief": {
+     "p_a": 0.9959
+    },
+    "limit": 98,
+    "side": "buy",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.1
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.25
+    },
+    "limit": 36,
+    "side": "sell",
+    "size": 4
+   },
+   {
+    "belief": {
+     "p_a": 0.009
+    },
+    "limit": 4,
+    "side": "sell",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.8
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.8888888888888888
+    },
+    "limit": 87,
+    "side": "buy",
+    "size": 7
+   },
+   {
+    "belief": {
+     "p_a": 0.985
+    },
+    "limit": 96,
+    "side": "buy",
+    "size": 8
+   },
+   {
+    "belief": {
+     "p_a": 0.5764705882352941
+    },
+    "research": true
+   },
+   {
+    "belief": {
+     "p_a": 0.7605321507760532
+    },
+    "limit": 70,
+    "side": "buy",
+    "size": 6
+   },
+   {
+    "belief": {
+     "p_a": 0.975
+    },
+    "limit": 93,
+    "side": "buy",
+    "size": 8
+   }
+  ]
+ },
+ "deal_id": "full-05",
+ "errors": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  "size 10 too large: filled in full at 2 your worst case this hand would not leave 1 chip of your bankroll 965; the most you can sell at limit 2 is 9",
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "match_id": "exchange/full-05/s1/g0/r2/gemini-4-argon+gemini-4-carbon+claude-fable-5.2+claude-sonnet-5.5+gpt-6.2-astra+gpt-6.2-sol",
+ "metrics": [
+  {
+   "belief_brier": 6.127871200436837e-10,
+   "belief_logloss": 2.4416134348473206e-09,
+   "chips": -22.0,
+   "decisions": 30,
+   "draws": 1,
+   "ev_chips": -18.434124556169962,
+   "fees_paid": 3,
+   "fees_received": 33,
+   "final_chips": 978,
+   "hands": 10,
+   "insider": false,
+   "market_gain": 0.15959658394926804,
+   "market_read": 0.016419839883078942,
+   "pass_when_should_trade": 5,
+   "r2_belief_vs_own": 0.5289771830528127,
+   "trade_regret": 250.31689517332723,
+   "trade_regret_r1": 240.49889165791694,
+   "trade_regret_r2": 9.81800351541029,
+   "trade_regret_r2_own": 7.744492250473023,
+   "trade_when_should_pass": 0,
+   "trades": 1,
+   "volume": 2,
+   "wrong_direction": 0
+  },
+  {
+   "belief_brier": 5.1725598133783774e-14,
+   "belief_logloss": 3.823554733184908e-13,
+   "chips": -122.0,
+   "decisions": 30,
+   "draws": 3,
+   "ev_chips": -174.64369939119047,
+   "fees_paid": 14,
+   "fees_received": 23,
+   "final_chips": 878,
+   "hands": 10,
+   "insider": false,
+   "market_gain": 0.36261108248795887,
+   "market_read": 0.005947132869700803,
+   "pass_when_should_trade": 2,
+   "r2_belief_vs_own": 0.7420983901338656,
+   "trade_regret": 361.4203587178046,
+   "trade_regret_r1": 359.9971999854361,
+   "trade_regret_r2": 1.4231587323685346,
+   "trade_regret_r2_own": 9.17970297583981,
+   "trade_when_should_pass": 0,
+   "trades": 6,
+   "volume": 23,
+   "wrong_direction": 1
+  },
+  {
+   "belief_brier": 6.308315534667807e-08,
+   "belief_logloss": 1.7756058137544566e-07,
+   "chips": -49.0,
+   "decisions": 30,
+   "draws": 6,
+   "ev_chips": -41.68292682926829,
+   "fees_paid": 38,
+   "fees_received": 19,
+   "final_chips": 951,
+   "hands": 10,
+   "insider": false,
+   "market_gain": 0.18847618321872545,
+   "market_read": 0.0584961672567831,
+   "pass_when_should_trade": 3,
+   "r2_belief_vs_own": 0.2290193071383301,
+   "trade_regret": 202.59995860266855,
+   "trade_regret_r1": 192.8589470590154,
+   "trade_regret_r2": 9.741011543653144,
+   "trade_regret_r2_own": 118.43153574314691,
+   "trade_when_should_pass": 0,
+   "trades": 1,
+   "volume": 6,
+   "wrong_direction": 0
+  },
+  {
+   "belief_brier": 1.5264964750319646e-07,
+   "belief_logloss": 3.6943074186487795e-07,
+   "chips": 165.0,
+   "decisions": 30,
+   "draws": 2,
+   "ev_chips": 77.9032258064516,
+   "fees_paid": 6,
+   "fees_received": 26,
+   "final_chips": 1165,
+   "hands": 10,
+   "insider": false,
+   "market_gain": 0.08329751680383837,
+   "market_read": 0.09905788282829253,
+   "pass_when_should_trade": 5,
+   "r2_belief_vs_own": 0.03727253154171792,
+   "trade_regret": 211.60333868698268,
+   "trade_regret_r1": 188.72353502388518,
+   "trade_regret_r2": 22.879803663097498,
+   "trade_regret_r2_own": 2.879310650712341,
+   "trade_when_should_pass": 0,
+   "trades": 1,
+   "volume": 5,
+   "wrong_direction": 0
+  },
+  {
+   "belief_brier": 9.291561480517799e-13,
+   "belief_logloss": 7.2053244402560894e-12,
+   "chips": 156.0,
+   "decisions": 30,
+   "draws": 4,
+   "ev_chips": 228.51949680116303,
+   "fees_paid": 32,
+   "fees_received": 20,
+   "final_chips": 1156,
+   "hands": 10,
+   "insider": true,
+   "market_gain": 0.0672187245941365,
+   "market_read": 0.007310131661654983,
+   "pass_when_should_trade": 0,
+   "r2_belief_vs_own": 0.1348086782182392,
+   "trade_regret": 94.1952074884762,
+   "trade_regret_r1": 59.1039715904218,
+   "trade_regret_r2": 35.09123589805441,
+   "trade_regret_r2_own": 49.47851257209113,
+   "trade_when_should_pass": 0,
+   "trades": 8,
+   "volume": 41,
+   "wrong_direction": 1
+  },
+  {
+   "belief_brier": 1.8585223963336827e-33,
+   "belief_logloss": 8.994712734623452e-18,
+   "chips": -128.0,
+   "decisions": 30,
+   "draws": 7,
+   "ev_chips": -71.66197183098589,
+   "fees_paid": 46,
+   "fees_received": 18,
+   "final_chips": 872,
+   "hands": 10,
+   "insider": false,
+   "market_gain": 0.1206882636883937,
+   "market_read": 0.02588574919063099,
+   "pass_when_should_trade": 4,
+   "r2_belief_vs_own": 0.1637132328889333,
+   "trade_regret": 211.87873226070676,
+   "trade_regret_r1": 166.29827338741256,
+   "trade_regret_r2": 45.580458873294205,
+   "trade_regret_r2_own": 70.81830088392405,
+   "trade_when_should_pass": 0,
+   "trades": 1,
+   "volume": 5,
+   "wrong_direction": 0
+  }
+ ],
+ "payoffs": [
+  -22.0,
+  -122.0,
+  -49.0,
+  165.0,
+  156.0,
+  -128.0
+ ],
+ "seating": [
+  "gemini-4-argon",
+  "gemini-4-carbon",
+  "claude-fable-5.2",
+  "claude-sonnet-5.5",
+  "gpt-6.2-astra",
+  "gpt-6.2-sol"
+ ],
+ "seed": 1,
+ "system_sha256": [
+  "a4f68eb569aed1c69f1fa96cddf46141af52c6682affece91ea7a6f4119a5fe2",
+  "a2e123aca599ed6f5d009dcd636b522772340ff4be1851599b03e437abb171e0",
+  "99b7be9d752e6d08913fd352e009fafd98ae0e9c91aeca44f7bdf1609184ca1f",
+  "4db728a14a6b5bd9ba2b44a49f4f7947383589c73b90272d3df3ace73f849550",
+  "69a5b24a49198b5a67210114da7241dba74daf20d96b235f87b3e3c340d00403",
+  "aa9d9e2b60103721fd52bc56df52eb359c2420f07eb621b7ec32f05b9896647a"
+ ],
+ "views_sha256": "7e67b62b49ea11cee06401d1e3e8bc20e048f9be895938279c086002c5e40de7"
+}

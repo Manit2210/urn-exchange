@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "urn-exchange"
+version = "1.0.0"
+description = "Urn Exchange: a zero-sum trading game for language models, graded against exact Bayesian posteriors."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "LICENSE-DATA"]
+authors = [{ name = "Continual Awareness" }]
+keywords = ["llm", "benchmark", "evaluation", "game", "bayesian", "trading", "multi-agent"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "openai>=1.40",
+    "numpy>=1.26",
+    "pydantic>=2.6",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+gemini = ["google-genai>=1.0"]
+anthropic = ["anthropic>=0.40"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+urn-exchange = "urn_exchange.cli:main"
+
+[project.urls]
+"Write-up" = "https://continualawareness.com/research/urn-exchange-v1"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/urn_exchange"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

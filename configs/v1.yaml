@@ -1,0 +1,109 @@
+# Urn Exchange v1: the exact settings of the published run (18 Nov 2026).
+#
+# Six models at one six-seat table, 12 duplicate deals (full-01..full-06 x seeds 0 and 1). Each deal is
+# played 6 times with the models rotated through the seats, so every model plays every seat's evidence once
+# (including the insider seat): 12 x 6 = 72 matches, every model in every match, 10 hands per match.
+# Protocol: reply limit 16,000 tokens and reasoning effort "high" for every model, except that the two
+# Gemini models have thinking capped at 8,000 tokens instead (an uncapped Gemini can think through the
+# whole reply limit and never act). Upstream hosts pinned, no fallbacks.
+#
+#   urn-exchange dry-run --config configs/v1.yaml     free: bots play, prints the cost estimate
+#   urn-exchange run     --config configs/v1.yaml     PAID: about USD 370-420 and several hours
+#
+# Every model goes through OpenRouter (one key: OPENROUTER_API_KEY). BYOK (bring your own key): if you add
+# your own OpenAI / Anthropic / Google keys in your OpenRouter settings (Integrations), OpenRouter routes the
+# call to that provider on your key and charges only its BYOK fee; the provider bills you for the tokens.
+# The runner books the true cost either way (upstream cost + fee, from OpenRouter's usage accounting). In
+# v1 the GPT and Claude calls ran on the publisher's own provider keys through BYOK; the Gemini calls ran
+# partly direct on the Gemini API (route below) and partly on OpenRouter credits, with the same 8k cap.
+#
+# Set a spend limit at each provider too: the budget below is a guard in this program, not a bill cap.
+name: urn-exchange-v1
+
+# Hard ceiling in USD for this run id (all resumes included). 0 = refuse to start a paid run.
+# Read the dry-run estimate, then set it, e.g. 450 for the full v1 run.
+budget_usd: 0
+
+concurrency: 24        # matches in parallel (each match runs its six seats' calls in turn, round by round)
+circuit_breaker: 3     # a model with 3 errored matches in a row is skipped for the rest of the run
+params:                # applied to every model after its own params
+  max_tokens: 16000
+  reasoning_effort: high
+estimate_output_tokens: 3000
+ledger: results/spend.sqlite
+results_dir: results/runs
+cache_dir: results/cache
+cache_read: true
+
+models:
+- key: gpt-6.2-astra
+  provider: openai_compatible
+  model: openai/gpt-6.2-astra
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [openai], allow_fallbacks: false}
+  rpm: 18
+  estimate: {input_tokens_per_call: 4679, cached_fraction: 0.803, output_tokens_per_call: 152}   # measured in v1
+- key: gpt-6.2-sol
+  provider: openai_compatible
+  model: openai/gpt-6.2-sol
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [openai], allow_fallbacks: false}
+  rpm: 18
+  estimate: {input_tokens_per_call: 6558, cached_fraction: 0.793, output_tokens_per_call: 390}
+- key: gemini-4-argon
+  provider: openai_compatible
+  model: google/gemini-4-argon
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [google-ai-studio], allow_fallbacks: false}   # standard tier
+  rpm: 18
+  params:
+    reasoning: {max_tokens: 8000}   # thinking cap; replaces reasoning_effort for this model
+  estimate: {input_tokens_per_call: 14374, cached_fraction: 0.634, output_tokens_per_call: 951}
+- key: gemini-4-carbon
+  provider: openai_compatible
+  model: google/gemini-4-carbon
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [google-ai-studio], allow_fallbacks: false}
+  rpm: 18
+  params:
+    reasoning: {max_tokens: 8000}
+  estimate: {input_tokens_per_call: 69277, cached_fraction: 0.632, output_tokens_per_call: 5279}
+- key: claude-fable-5.2
+  provider: openai_compatible
+  model: anthropic/claude-fable-5.2
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [anthropic], allow_fallbacks: false}
+  rpm: 18
+  params:
+    cache_control: {type: ephemeral}   # Anthropic caches only on request
+  estimate: {input_tokens_per_call: 9604, cached_fraction: 0.765, output_tokens_per_call: 445}
+- key: claude-sonnet-5.5
+  provider: openai_compatible
+  model: anthropic/claude-sonnet-5.5
+  api_key_env: OPENROUTER_API_KEY
+  routing: {order: [anthropic], allow_fallbacks: false}
+  rpm: 18
+  params:
+    cache_control: {type: ephemeral}
+  estimate: {input_tokens_per_call: 7278, cached_fraction: 0.744, output_tokens_per_call: 228}
+
+# Optional direct-Gemini route (GEMINI_API_KEY, `pip install -e ".[gemini]"`): replace a Gemini entry above
+# with the block below. Same model, same 8k thinking cap (sent as thinking_budget). Lower Google AI Studio
+# tiers have a spend-based rate limit per rolling 10 minutes; the runner waits it out (long backoff). Watch
+# your monthly spend cap in Google AI Studio: when it is reached, calls fail until it is raised.
+#
+# - key: gemini-4-argon
+#   provider: gemini_api
+#   model: gemini-4-argon
+#   api_key_env: GEMINI_API_KEY
+#   rpm: 18
+#   params:
+#     reasoning: {max_tokens: 8000}
+#   estimate: {input_tokens_per_call: 14374, cached_fraction: 0.634, output_tokens_per_call: 951}
+
+games:
+- game: exchange
+  split: full
+  n_deals: 6       # full-01..full-06: the six deal families once each
+  seeds: [0, 1]    # each deal with two different draws
+  n_players: 6     # one table: all six models every match, rotated through the six seats
