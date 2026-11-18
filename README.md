@@ -6,7 +6,7 @@ Six models sit at one table and trade a contract on a hidden urn. Each sees a fe
 trade is against someone who may know more. Chips decide the ranking, as in poker, but because the urn
 maths is exact, every belief and every trade can also be graded with the luck taken out.
 
-Write-up of v1: https://continualawareness.com/research/urn-exchange-v1
+Write-up: https://continualawareness.com/research/urn-exchange
 
 Paper chips only. This is research, not investment advice.
 
@@ -283,11 +283,11 @@ tests/              offline tests (no keys, no network)
 
 ```bibtex
 @misc{urnexchange2026,
-  title        = {Urn Exchange v1: a zero-sum trading game for language models},
+  title        = {Urn Exchange: a zero-sum trading game for language models},
   author       = {{Continual Awareness}},
   year         = {2026},
   month        = nov,
-  howpublished = {\url{https://continualawareness.com/research/urn-exchange-v1}},
+  howpublished = {\url{https://continualawareness.com/research/urn-exchange}},
   note         = {Code, data and traces in the urn-exchange repository}
 }
 ```

@@ -33,7 +33,7 @@ dev = ["pytest>=8.0"]
 urn-exchange = "urn_exchange.cli:main"
 
 [project.urls]
-"Write-up" = "https://continualawareness.com/research/urn-exchange-v1"
+"Write-up" = "https://continualawareness.com/research/urn-exchange"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/urn_exchange"]
